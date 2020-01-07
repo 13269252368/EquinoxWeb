@@ -1,0 +1,433 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Roboto-Light.woff') format('woff'), 
+  url('../fonts/Roboto-Light.ttf') format('truetype'), 
+  url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	background-color: #1C1C1C;
+	font-family: 'Roboto-Light';
+}
+
+#main{
+	position:relative;
+	height: 3900px;
+	width: 1139px;
+	margin: auto;
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#main2{
+	position:relative;
+	height: 1158px;
+	width: 1139px;
+	margin: auto;
+	background-image: url('../images/background2.jpg');
+	background-repeat: no-repeat;
+    background-position: center top;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+#highlighted {
+	color: #FF8000;
+}
+
+#highlighted2 {
+	font: 24.0px Roboto-Light;
+	color: #4682b4;
+}
+
+#highlighted3 {
+	color: #4682b4;
+}
+
+#navigation {
+	position:-webkit-sticky;
+    position:sticky;
+	top:249px;
+	margin-left: 74px;
+}
+
+.homeButton {
+	position:absolute;
+	top:0px;
+	left:0px;
+    background:url('../images/home.png') no-repeat;
+    cursor:pointer;
+    border:none;
+    width:141px;
+    height:49px;
+}
+
+.homeButton:hover {   
+    background:url('../images/homeHover.png') no-repeat;
+}
+
+.homeButton:active {   
+    background:url('../images/homePressed.png') no-repeat;
+}
+
+.screenshotsButton {
+	position:absolute;
+	top:60px;
+	left:0px;
+    background:url('../images/screenshots.png') no-repeat;
+    cursor:pointer;
+    border:none;
+    width:141px;
+    height:49px;
+}
+
+.screenshotsButton:hover {   
+    background:url('../images/screenshotsHover.png') no-repeat;
+}
+
+.screenshotsButton:active {   
+    background:url('../images/screenshotsPressed.png') no-repeat;
+}
+
+.downloadsButton {
+	position:absolute;
+	top:120px;
+	left:0px;
+    background:url('../images/download.png') no-repeat;
+    cursor:pointer;
+    border:none;
+    width:141px;
+    height:49px;
+}
+
+.downloadsButton:hover {   
+    background:url('../images/downloadHover.png') no-repeat;
+}
+
+.downloadsButton:active {   
+    background:url('../images/downloadPressed.png') no-repeat;
+}
+
+.architectureButton {
+	position:absolute;
+	top:180px;
+	left:0px;
+    background:url('../images/architecture.png') no-repeat;
+    cursor:pointer;
+    border:none;
+    width:141px;
+    height:49px;
+}
+
+.architectureButton:hover {   
+    background:url('../images/architectureHover.png') no-repeat;
+}
+
+.architectureButton:active {   
+    background:url('../images/architecturePressed.png') no-repeat;
+}
+
+.aboutButton {
+	position:absolute;
+	top:240px;
+	left:0px;
+    background:url('../images/about.png') no-repeat;
+    cursor:pointer;
+    border:none;
+    width:141px;
+    height:49px;
+}
+
+.aboutButton:hover {   
+    background:url('../images/aboutHover.png') no-repeat;
+}
+
+.aboutButton:active {   
+    background:url('../images/aboutPressed.png') no-repeat;
+}
+
+#welcome {
+	position:absolute;
+	top:260px;
+	left:351px;
+	width: 712px;
+	font: 18.0px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	line-height: 150%;
+	text-align: justify;
+}
+
+#trailer {
+	position:absolute;
+	top:670px;
+	left:351px;
+}
+
+#screenshots {
+	position:absolute;
+	top:1020px;
+	left:351px;
+	width: 712px;
+	font: 18.0px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	line-height: 150%;
+}
+
+#download {
+	position:absolute;
+	top:1500px;
+	left:351px;
+	width: 712px;
+	font: 18.0px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	line-height: 150%;
+}
+
+#downloadButtons {
+	position:absolute;
+	top:1620px;
+	left:365px;
+	width: 395px;
+	height: 425px;
+	font: 12.0px verdana;
+	border: 4.0px solid transparent;
+}
+
+#architecture {
+	position:absolute;
+	top:2090px;
+	left:351px;
+	width: 712px;
+	font: 18.0px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	line-height: 150%;
+	text-align: justify;
+}
+
+#about {
+	position:absolute;
+	top:3567px;
+	left:351px;
+	width: 712px;
+	font: 18.0px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	line-height: 150%;
+	text-align: justify;
+}
+
+#corp {
+	position:absolute;
+	top:3761px;
+	left:3px;
+	width: 735px;
+	font: 14px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	text-align: right;
+}
+
+#corp2 {
+	position:absolute;
+	top:1019px;
+	left:3px;
+	width: 735px;
+	font: 14px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	text-align: right;
+}
+
+#welcome2 {
+	position:absolute;
+	top:706px;
+	left:351px;
+	width: 712px;
+	font: 18.0px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	line-height: 150%;
+}
+
+#macos {
+	position:absolute;
+	top:390px;
+	left:351px;
+	width: 712px;
+	font: 18.0px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	line-height: 150%;
+}
+
+#linux {
+	position:absolute;
+	top:610px;
+	left:351px;
+	width: 712px;
+	font: 18.0px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	line-height: 150%;
+}
+
+#windows {
+	position:absolute;
+	top:750px;
+	left:351px;
+	width: 712px;
+	font: 18.0px Roboto-Light;
+	color: #f5f5f5;
+	border: #FF8000;
+	line-height: 150%;
+}
+
+#header {
+	font: bold italic 12.0px verdana;
+	color: #FF8000;
+}
+
+#text {
+	font: 12.0px verdana;
+	color: #f5f5f5;
+}
+
+.downloadButton {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: bold 14px/100% "Trebuchet MS", Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	padding: .4em 1em .5em 1em;
+	margin: 10px 0;
+	background: #3b88d8;
+	background: -moz-linear-gradient(0% 100% 90deg, #377ad0, #52a8e8);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#52a8e8), to(#377ad0));
+	border-top: 1px solid #4081af;
+	border-right: 1px solid #2e69a3;
+	border-bottom: 1px solid #20559a;
+	border-left: 1px solid #2e69a3;
+	-moz-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	-webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	color: #fff;
+	text-shadow: 0 -1px 1px #3275bc;
+	-webkit-background-clip: padding-box;
+}
+ 
+.downloadButton:hover {
+	background: #2a81d7;
+	background: -moz-linear-gradient(0% 100% 90deg, #206bcb, #3e9ee5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3e9ee5), to(#206bcb));
+	border-top: 1px solid #2a73a6;
+	border-right: 1px solid #165899;
+	border-bottom: 1px solid #07428f;
+	border-left: 1px solid #165899;
+	-moz-box-shadow: inset 0 1px 0 0 #62b1e9;
+	-webkit-box-shadow: inset 0 1px 0 0 #62b1e9;
+	cursor: pointer;
+	text-shadow: 0 -1px 1px #1d62ab;
+	-webkit-background-clip: padding-box;
+}
+ 
+.downloadButton:active {
+	background: #3282d3;
+	border: 1px solid #154c8c;
+	border-bottom: 1px solid #0e408e;
+	-moz-box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 #fff;
+	-webkit-box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 #fff;
+	text-shadow: 0 -1px 1px #2361a4;
+	-webkit-background-clip: padding-box;
+}
+ 
+.downloadButton:after {
+        content: url('../images/downloadArrow.png');
+        width: 8px;
+        height: 10px;
+        float: right;
+        margin: 1px 0 0 10px;
+}
+
+.backButton {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: bold 14px/100% "Trebuchet MS", Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	padding: .4em 1em .5em 1em;
+	margin: 10px 0;
+	background: #3b88d8;
+	background: -moz-linear-gradient(0% 100% 90deg, #377ad0, #52a8e8);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#52a8e8), to(#377ad0));
+	border-top: 1px solid #4081af;
+	border-right: 1px solid #2e69a3;
+	border-bottom: 1px solid #20559a;
+	border-left: 1px solid #2e69a3;
+	-moz-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	-webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	color: #fff;
+	text-shadow: 0 -1px 1px #3275bc;
+	-webkit-background-clip: padding-box;
+}
+ 
+.backButton:hover {
+	background: #2a81d7;
+	background: -moz-linear-gradient(0% 100% 90deg, #206bcb, #3e9ee5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3e9ee5), to(#206bcb));
+	border-top: 1px solid #2a73a6;
+	border-right: 1px solid #165899;
+	border-bottom: 1px solid #07428f;
+	border-left: 1px solid #165899;
+	-moz-box-shadow: inset 0 1px 0 0 #62b1e9;
+	-webkit-box-shadow: inset 0 1px 0 0 #62b1e9;
+	cursor: pointer;
+	text-shadow: 0 -1px 1px #1d62ab;
+	-webkit-background-clip: padding-box;
+}
+ 
+.backButton:active {
+	background: #3282d3;
+	border: 1px solid #154c8c;
+	border-bottom: 1px solid #0e408e;
+	-moz-box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 #fff;
+	-webkit-box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 #fff;
+	text-shadow: 0 -1px 1px #2361a4;
+	-webkit-background-clip: padding-box;
+}
+ 
+.backButton:after {
+        content: url('../images/back.png');
+        width: 8px;
+        height: 10px;
+        float: right;
+        margin: 1px 0 0 10px;
+}

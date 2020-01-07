@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Equinox Digital Twin</title>
+<link rel="stylesheet" type="text/css" href="styles/pageStyle.css">
+<link rel="stylesheet" type="text/css" href="styles/popupStyle.css">
+<script src="scripts/downloads.js"></script>
+<script src="scripts/popup.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="navigation">
+            <button type="button" class="homeButton" onclick="location.href='#top'"></button>
+            <button type="button" class="screenshotsButton" onclick="location.href='#screenshots'"></button>
+            <button type="button" class="downloadsButton" onclick="location.href='#downloads'"></button>
+            <button type="button" class="architectureButton" onclick="location.href='#architecture'"></button>
+            <button type="button" class="aboutButton" onclick="location.href='#about'"></button>
+        </div>
+        <div id="welcome">
+            <label id="highlighted"><a name="home">Welcome!</a></label><br> Equinox is a data analysis and visualization digital-twin-platform.
+            It aims at creating a digital representation of the engineering structure. Equinox has the following major capabilities:
+            <ul>
+                <li>Parameterized spectrum analysis,
+                <li>2D and 3D data visualization,
+                <li>Search engine for central digital-twin database,
+                <li>Collaboration (file and view sharing),
+                <li>Automatic report generation,
+                <li>Automation API (using XML or JSON instruction files),
+                <li>Plugin extensions via automation API.
+            </ul>
+            Check out the videos below to see a brief demo of Equinox. You can scroll through the videos from the control at top-left corner.
+        </div>
+        <div id="trailer">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?list=PLEd0Hq2R8k97HsDuiorCCnb4cAABZqu_z"
+                frameborder="1"
+                gesture="media"
+                allow="autoplay; encrypted-media">
+            </iframe>
+        </div>
+        <div id="screenshots">
+            <label id="highlighted"><a name="screenshots">Screenshots</a></label><br>
+            Screenshots below demonstrate some of the analysis and data visualization capabilities of Equinox. Double-click on a screenshot to see a larger image.<br>
+            <img id="screenshot1" src="images/screenshot1.png" alt="Stress Comparison Plots" onclick="showPopup('screenshot1')" width="222" height="161">
+            <img id="screenshot2" src="images/screenshot2.png" alt="Fatigue Spectrum Compariosn Plots" onclick="showPopup('screenshot2')" width="222" height="161">
+            <img id="screenshot3" src="images/screenshot3.png" alt="Damage Contribution Plots" onclick="showPopup('screenshot3')" width="222" height="161">
+            <img id="screenshot4" src="images/screenshot4.png" alt="Fatigue Life Factor Plots" onclick="showPopup('screenshot4')" width="222" height="161">
+            <img id="screenshot5" src="images/screenshot5.png" alt="3D Equivalent Stress Contours" onclick="showPopup('screenshot5')" width="222" height="161">
+            <img id="screenshot6" src="images/screenshot6.png" alt="3D Equivalent Stress Contours" onclick="showPopup('screenshot6')" width="222" height="161">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </div>
+        <div id="download">
+            <label id="highlighted"><a name="downloads">Downloads</a></label><br>
+            You can download the installation package for your operating system by clicking the download links below.
+        </div>
+            <div id="downloadButtons">
+                <table>
+                    <tr>
+                        <td valign="top">   
+                            <img src="images/macosx.png" alt="macosx.png"/>
+                        </td>
+                        <td valign="middle">
+                            <label id="header">MAC OSX</label><br><hr>
+                            <label id="text">This download includes a zip file containing a DMG installer file.</label>
+                            <label id="text">Click <strong><a onclick="installationInstructionsForMac()"><u>here</u></a></strong> for installation instructions on Mac OSX.</label><br>
+                            <a class="downloadButton" onclick="macosx()">Download for Mac OSX</a><br><br>   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <img src="images/windows.png" alt="windows.png"/>
+                        </td>
+                        <td valign="middle">
+                            <label id="header">WINDOWS</label><br><hr>
+                            <label id="text">This download includes a zip file containing an EXE installer file.</label>
+                            <label id="text">Click <strong><a onclick="installationInstructionsForWindows()"><u>here</u></a></strong> for installation instructions on Windows.</label><br>
+                            <a class="downloadButton" onclick="windows()">Download for Windows</a><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <img src="images/linux.png" alt="linux.png"/>
+                        </td>
+                        <td valign="middle">
+                            <label id="header">LINUX</label><br><hr>
+                            <label id="text">This download includes a tar.gz file containing an executable image.</label>
+                            <label id="text">Click <strong><a onclick="installationInstructionsForLinux()"><u>here</u></a></strong> for installation instructions on Linux.</label><br>
+                            <a class="downloadButton" onclick="linux()">Download for Linux</a><br><br>      
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        <div id="architecture">
+            <label id="highlighted"><a name="architecture">Architecture</a></label><br> The platform is composed of 6 containerized services, each with 
+            its specific scope as follows:
+            <ul>
+                <li><label id="highlighted3">Data server</label> - Serves digital-twin metadata from the central database,
+                <li><label id="highlighted3">Exchange server</label> - Enables collaboration among client applications of the platform,
+                <li><label id="highlighted3">Analysis server</label> - Performs data and structural fatigue analyses,
+                <li><label id="highlighted3">SQL server</label> - MySQL relational database. It stores the metadata of the digital-twin,
+                <li><label id="highlighted3">SFTP file server</label> - Stores object data in a structured directory system,
+                <li><label id="highlighted3">Update server</label> - Checks and updates all services from Docker Hub.
+            </ul>
+            <img id="awsarchitecture" src="images/awsarchitecture.png" alt="Platform Architecture" onclick="showPopup('awsarchitecture')" width="700" height="909">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <br><br><p>As seen in the figure, all service containers are running on top of EC2 (Elastic Compute Cloud) instances in AWS (Amazon Web Services) 
+            cloud. The EC2 instances are placed inside auto-scaling groups which scale the service up or down on multiple AWS Availability Zones, based on traffic.</p>
+            <p>At the outer layer, load-balancers distribute incoming traffic to the auto-scaling group of each internet-facing service. The database server is 
+            <strong>not</strong> internet-facing therefore its load-balancer is distributing incoming traffic from private subnets on multiple availability zones.</p>
+        </div>
+        <div id="about">
+            <label id="highlighted"><a name="about">About</a></label><br>
+            Equinox Digital Twin Platform has been designed and developed by <a id="highlighted3" href="mailto:muratartim@gmail.com"><b>Murat Artim</b></a>. 
+            Murat Artim is an enterprise architect in aerospace industry. He has more than 10 years of industry experience in enterprise, web and distributed applications.
+        </div>
+        <div id="corp">
+            <a href="mailto:muratartim@gmail.com">
+                <img alt="email" src="images/email.png" width="60" height="60">
+            </a>&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/muratartim">
+                <img alt="linkedin" src="images/linkedin.png" width="60" height="60">
+            </a>&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/muratartim">
+                <img alt="twitter" src="images/twitter.png" width="60" height="60">
+            </a>&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/muratartim">
+                <img alt="github" src="images/github.png" width="60" height="60">
+            </a>&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://hub.docker.com/u/muratartim">
+                <img alt="dockerhub" src="images/dockerhub.png" width="60" height="60">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
